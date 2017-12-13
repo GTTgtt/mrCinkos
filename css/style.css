@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette|Fredericka+the+Great");
+/* line 1, ../scss/base/_reset.scss */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* line 1, ../scss/base/_base.scss */
+html, body, main, section {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../scss/base/_base.scss */
+section {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 11, ../scss/base/_base.scss */
+iframe {
+  margin: 0 auto;
+  width: 80%;
+  height: 50%;
+}
+
+/* line 1, ../scss/layout/_header.scss */
+header {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+/* line 7, ../scss/layout/_header.scss */
+header #heading {
+  margin-left: 10%;
+  width: 40%;
+  height: 100%;
+}
+/* line 12, ../scss/layout/_header.scss */
+header #heading #logo {
+  padding: 50px 50px 10px 50px;
+  z-index: 1;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  color: gray;
+}
+/* line 21, ../scss/layout/_header.scss */
+header #heading #navigator {
+  z-index: 1;
+  padding: 0 25px;
+  width: calc(100% - 50px);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+/* line 32, ../scss/layout/_header.scss */
+header #heading #navigator a {
+  padding: 0 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: lightgray;
+  font-family: monospace;
+  cursor: pointer;
+}
+/* line 42, ../scss/layout/_header.scss */
+header #heading #navigator a:hover {
+  border-bottom: 2px solid lightcoral;
+  color: gray;
+}
+/* line 48, ../scss/layout/_header.scss */
+header #heading #title {
+  position: absolute;
+  top: 0;
+  padding: 0 50px;
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 59, ../scss/layout/_header.scss */
+header #heading h1 {
+  margin: 50px 0;
+  color: gray;
+  font-size: 120px;
+  line-height: 100px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  direction: rtl;
+}
+/* line 69, ../scss/layout/_header.scss */
+header #heading h2 {
+  margin: 20px 0;
+  color: lightgray;
+  letter-spacing: 5px;
+  font-family: 'Courgette', cursive;
+  font-weight: 400;
+  direction: rtl;
+}
+/* line 79, ../scss/layout/_header.scss */
+header #img-container {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 6px));
+  grid-template-rows: repeat(4, calc(25% - 6px));
+  grid-gap: 8px;
+}
+/* line 90, ../scss/layout/_header.scss */
+header #img-container div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: contrast(55%) brightness(130%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+/* line 101, ../scss/layout/_header.scss */
+header #img-container div:hover {
+  z-index: 2;
+  transform: scale(1.2);
+  filter: none;
+  box-shadow: 0 0 10px gray;
+}
+
+/* line 110, ../scss/layout/_header.scss */
+.single-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("../img/16708690_881671265308413_8700034839940904614_n.jpg");
+}
+
+/* line 117, ../scss/layout/_header.scss */
+.single-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("../img/17155378_890516324423907_6978534014551206222_n.jpg");
+}
+
+/* line 124, ../scss/layout/_header.scss */
+.single-3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../img/17351989_900638890078317_6040627547789626372_n.jpg");
+}
+
+/* line 131, ../scss/layout/_header.scss */
+.single-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url("../img/17425991_906389956169877_3976560945698747332_n.jpg");
+}
+
+/* line 138, ../scss/layout/_header.scss */
+.single-5 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url("../img/17553974_903595669782639_2069348189530159500_n.jpg");
+}
+
+/* line 145, ../scss/layout/_header.scss */
+.single-6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../img/17760182_907577249384481_5282749482757405395_n.jpg");
+}
+
+/* line 153, ../scss/layout/_header.scss */
+.double-wide-1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("../img/17796198_909631589179047_4781737284026554020_n.jpg");
+}
+
+/* line 160, ../scss/layout/_header.scss */
+.double-wide-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("../img/18519805_933494223459450_1458768780756240703_n.jpg");
+}
+
+/* line 167, ../scss/layout/_header.scss */
+.double-wide-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../img/18320734_925331290942410_7075479937372484188_o.jpg");
+}
+
+/* line 175, ../scss/layout/_header.scss */
+.double-high-1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url("../img/18193917_922598331215706_2414904208470151782_n.jpg");
+}
+
+/* line 182, ../scss/layout/_header.scss */
+.double-high-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-image: url("../img/18581922_935714199904119_2930366751391018391_n.jpg");
+}
+
+/* line 190, ../scss/layout/_header.scss */
+font {
+  color: lightcoral;
+}

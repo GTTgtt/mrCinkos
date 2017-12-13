@@ -2,165 +2,51 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="code.js"></script>
+        
         <title>Mr. Činkos</title>
     </head>
-    <body onload="load()">
+    <body>
         <header>
-            <div id="header-content">
-                <div id="menu">
-                    <div id="logo">Mr. Činkos</div>
-                    <div id="social-media">
-                        <div class="social-media">
-                            <img src="Images/facebook-logo-button.png" alt="facebook" />
-                        </div>
-                        <div class="social-media">
-                            <img src="Images/instagram-logo%20(1).png" alt="instagram" />
-                        </div>
-                        <div class="social-media">
-                            <img src="Images/twitter-logo-button.png" alt="twitter" />
-                        </div>
-                    </div>
+            <div id="img-container">
+                <div class="single-1"></div>
+                <div class="single-2"></div>
+                <div class="double-wide-1"></div>
+                <div class="double-wide-2"></div>
+                <div class="double-high-1"></div>
+                <div class="single-3"></div>
+                <div class="double-high-2"></div>
+                <div class="single-4"></div>
+                <div class="single-5"></div>
+                <div class="single-6"></div>
+                <div class="double-wide-3"></div>
+            </div>
+            <div id="heading">
+                <div id="logo">Mr. Cink<font>os</font></div>
+                <div id="navigator">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Contact</a>
                 </div>
-                <div id="heading">
-                    <div id="left">
-                        <div>
-                            <h1>Koju ću danas probati?</h1>
-                            <h2>Složi svoju omiljenu kombinaciju i dolazi ti na vrata za par minuta!</h2>
-                            <button>Naruči</button>
-                        </div>
-                    </div>
-                    <div id="right">
-                        <div id="images">
-                            <div class="row"></div>
-                            <div class="row"></div>
-                            <div class="row"></div>
-                            <div class="row">
-                                <div class="button" onclick="move('right')">&rarr;</div>
-                                <div class="button" onclick="move('left')">&larr;</div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="title">
+                    <h1><font>Love</font> goes through the <font>stomach</font></h1>
+                    <h2>The perfect pancake for your every desire</h2>
                 </div>
             </div>
         </header>
         <main>
-            <div class="page">
-                <div id="form">
-                    <form>
-                        <div>
-                            <h3>Palačinka</h3>
-                            <input type="radio" name="pancake" value="palacinka" />Palačinka
-                            <br />
-                            <input type="radio" name="pancake" value="coko-palacinka" />Čoko palačinka
-                            <h3>Namazi</h3>
-                            <input type="checkbox" name="spreads" value="nutella" />Nutella
-                            <br />
-                            <input type="checkbox" name="spreads" value="linolada" />Linolada
-                            <br />
-                            <input type="checkbox" name="spreads" value="cokolada" />Čokolada
-                            <br />Puding
-                            <select name="puding">
-                                <option></option>
-                                <option value="cokolada-puding">Čokolada</option>
-                                <option value="vanilija-puding">Vanilija</option>
-                            </select>
-                            <br />
-                            <input type="checkbox" name="spreads" value="med" />Med
-                            <br />
-                            <input type="checkbox" name="spreads" value="marmelada" />Marmelada
-                            <br />
-                            <input type="checkbox" name="spreads" value="maslac od kikirikija" />Maslac od kikirikija
-                            <h3>Keksi</h3>
-                            <input type="checkbox" name="cookies" value="jaffa" />Jaffa
-                            <br />
-                            <input type="checkbox" name="cookies" value="cookies" />Cookies
-                            <br />
-                            <input type="checkbox" name="cookies" value="petit-beurre" />Petit Beurre
-                            <br />
-                            <input type="checkbox" name="cookies" value="oreo" />Oreo
-                            <br />
-                            <input type="checkbox" name="cookies" value="Tutku" />Tutku
-                            <br />
-                            <input type="checkbox" name="cookies" value="plazma" />Plazma
-                            <br />
-                            <input type="checkbox" name="cookies" value="domacica" />Domačica
-                            <br />
-                            <input type="checkbox" name="cookies" value="napolitanke" />Napolitanke
-                            <br />
-                            <input type="checkbox" name="cookies" value="crispy-rolls" />Crispy Rolls
-                            <h3>Orašasti plodovi</h3>
-                            <input type="checkbox" name="nuts" value="ljesnjaci" />Lješnjaci
-                            <br />
-                            <input type="checkbox" name="nuts" value="bademi" />Bademi
-                            <br />
-                            <input type="checkbox" name="nuts" value="kokos" />Kokos
-                            <br />
-                            <input type="checkbox" name="nuts" value="orasi" />Orasi
-                            <br />
-                            <input type="checkbox" name="nuts" value="cimet" />Cimet
-                        </div>
-                        <div>
-                            <h3>Čokoladice</h3>
-                            <input type="checkbox" name="chocolate" value="kinder-bueno" />Kinder Bueno
-                            <br />
-                            <input type="checkbox" name="chocolate" value="milky-way" />Milky Way
-                            <br />
-                            <input type="checkbox" name="chocolate" value="bounty" />Bounty
-                            <br />
-                            <input type="checkbox" name="chocolate" value="kit-kat" />Kit Kat
-                            <br />
-                            <input type="checkbox" name="chocolate" value="kinder-cokoladice" />Kinder čokoladice
-                            <br />
-                            <input type="checkbox" name="chocolate" value="coksa" />Čoksa
-                            <br />
-                            <input type="checkbox" name="chocolate" value="bananko-cokoladice" />Bananko bananice
-                            <br />
-                            <input type="checkbox" name="chocolate" value="M&Ms" />M&Ms bomboni
-                            <br />
-                            <input type="checkbox" name="chocolate" value="rum-plocice" />Rum pločice
-                            <br />
-                            <input type="checkbox" name="chocolate" value="brownies" />Brownies
-                            <h3>Voće</h3>
-                            <input type="checkbox" name="fruit" value="sumsko-voce" />Šumsko voće
-                            <br />
-                            <input type="checkbox" name="fruit" value="banane" />Banane
-                            <br />
-                            <input type="checkbox" name="fruit" value="jagode" />Jagode
-                            <h3>Ostalo</h3>
-                            Sladoled
-                            <select name="sladoled">
-                                <option></option>
-                                <option value="cokolada-sladoled">Čokolada</option>
-                                <option value="vanilija-sladoled">Vanilija</option>
-                                <option value="jagoda-sladoled">Jagoda</option>
-                            </select>
-                            <br />
-                            <input type="checkbox" name="other" value="nesquik" />Nesquik
-                            <br />Preljev
-                            <select name="preljev">
-                                <option></option>
-                                <option value="cokolada-preljev">Čokolada</option>
-                                <option value="karamela-preljev">Karamela</option>
-                                <option value="jagoda-preljev">Jagoda</option>
-                                <option value="sumsko-voce-preljev">Šumsko voće</option>
-                                <option value="bijela-cokolada-preljev">Bijela čokolada</option>
-                                <option value="vanilija-preljev">Vanilija</option>
-                                <option value="visnja-preljev">Višnja</option>
-                            </select>
-                            <br />
-                            <input type="checkbox" name="other" value="slag" />Šlag
-                            <br /><br />
-                            <input type="submit" value="OK" />
-                        </div>
-                        <div id="choice">
-                        
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <section>
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaaleCa_nXEcRmk0EsXsaxL4&key=AIzaSyCVQREOOG-gG_PywP8668VsVTbQBtD6N7s" allowfullscreen></iframe>
+            </section>
+            
         </main>
+        <footer>
+        
+        </footer>
     </body>
 </html>
